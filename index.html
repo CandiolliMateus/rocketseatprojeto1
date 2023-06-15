@@ -1,0 +1,83 @@
+<!-- ANOTAÇÃO QUE DEFINE QUE ESSE DOCUMENTO É UM HTML 5 -->
+<!DOCTYPE html>
+
+<!-- TAG ROOT DO ARQUIVO HTML -->
+<!-- O ATRIBUTO "lang" DEFINE A LINGUAGEM EM QUE SE ESTÁ TRABALHANDO NESTE ARQUIVO -->
+<html lang="pt-br">
+
+    <!-- CABEÇALHO DA PÁGINA -->
+    <!-- CONTEM INSTRUÇÕES PARA A PÁGINA COMO UM TODO -->
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- TAGS "meta" SE REFERENCIAM AO PRÓPRIO ARQUIVO HTML -->
+        <!-- "charset" = CONJUNTO DE CARACTERES -->
+        <meta charset="UTF-8">
+
+        <!-- "viewport" SE REFERE À AREA QUE VISUALIZAMOS DO HTML -->
+        <!-- DIFERENTES TELAS, TEM VIEWPORTS DIFERENTES (PAGINA WEB É DIFERENTE DE MOBILE) -->
+        <!-- "content" ESTÁ DEFININDO COMO SERÁ APRESENTADO O CONTEÚDO, "width=device-width" DEFINE QUE VEREMOS O CONTEÚDO CONFORME A LARGURA DO DISPOSITIVO QUE USAMOS -->
+        <!-- "scale" DEFINE SE TERÁ ZOOM OU NÃO, 1.0 SIGNIFICA QUE NÃO TEM ZOOM -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Móveis customizados</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <!-- CORPO DO PROJETO -->
+    <body>
+
+        <div id="hero">
+
+            <img 
+                src="images/img1.jpg" 
+                alt="Desenho de uma pessoa vestindo uma camisa amarela em uma sala com móveis"
+            />
+
+            <!-- TAG "hx" É UTILIZADA PARA TÍTULOS (VAI DO 1 AO 6) -->
+            <h1>Ambientes <span>únicos</span> para você!</h1>
+            <p>
+                Nós criamos ambientes <strong>exclusívos</strong> e <strong>únicos</strong>, com muito bom gosto e profissionalismo, investimos tempo e <span>dedicação no seu projeto</span>. 
+            
+            <!-- TAG PARA QUEBRA DE LINHA -->
+            <br/>
+            <br/>
+                Tenha <span>ambientes limpos</span> e bem decorados, transmitindo <strong>elegância</strong> e <strong>finesse</strong> para todo aquele que estiver ali.
+            </p>
+        </div>
+        <div id="footer">
+
+            <!-- ESTE ELEMENTO DO HTML PODE SER DIFERENCIADO USANDO O ATRIBUTO "class" AO INVÉS DE "id" -->
+            <!-- ASSIM ELE PODE SER REPETIDO EM MAIS DE UM LUGAR NO HTML -->
+            <!-- "id's" NÃO DEVEM SER REPETIDOS, "class" PODE SER UTILIZADA EM MAIS DE UM LUGAR -->
+            <div class="line"></div>
+
+            <!-- EXISTEM ELEMENTOS "inline" E ELEMENTOS "block" -->
+            <!-- ELEMENTOS "inline" OCUPAM SOMENTE O ESPAÇO DO QUE É DESCRITO DO ELEMENTO (CASO DA TAG "a") -->
+            <!-- ELEMENTOS "block" OCUPAM TODA A LINHA EM QUE SÃO COLOCADOS E GERAM UMA QUEBRA DE LINHA AUTOMÁTICA (CASO DA TAG "p") -->
+            <a target="_blank" href="https://instagram.com/moveisparavoce">
+                Instagram
+            </a>
+            
+            <!-- CASO SEJA PRECISO FAZER UM ESPAÇO ESSE É O ATALHO -->
+            <!--
+            &nbsp;     -> NÃO É UTILIZADO NESSE CASO
+            -->
+            
+            <a href="mailto:moveisparavoce@moveisparavoce.com">Fale conosco</a>
+        </div>
+
+        <!-- TAG "img" FECHA-SE EM SI MESMA PORQUE NÃO TEM CONTEÚDO INTERNO -->
+        <img 
+            id="bolinhas"
+            src="images/balls.svg" 
+            alt="Bolinhas laranjadas no canto inferior direito da tela"
+        />
+
+    </body>
+
+</html>
